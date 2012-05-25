@@ -23,12 +23,14 @@ Screenshots:
 ![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item.png "Item page")
 
 Installation:
-Place files to folder catalog/view/theme/tecart
+
+Place files from upload folder to your site opencart directory.
 
 Additional configuration for pretty look - please read instruction.pdf
 
 
 Author: 
+
 stfalcon.com studio
 
 License: 
