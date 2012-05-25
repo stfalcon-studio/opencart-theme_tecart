@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('#cart > .heading a').die('click');
+    $('#cart').die('mouseleave');
     $('#cart > .heading').live('click', function () {
 		$('#cart').addClass('active');
 
