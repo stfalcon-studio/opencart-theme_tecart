@@ -11,11 +11,15 @@ Features:
 - compatible with all major browsers.
 - completely customizable.
 
+
+Demo:
+http://opencart-themes.dev.stfalcon.com/
+
 Screenshots:
 
 ![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Main page")
 ![Catalog page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Catalog page")
-![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item. "Item page")
+![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item.png "Item page")
 
 Installation:
 Place files to folder catalog/view/theme/tecart
