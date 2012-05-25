@@ -12,9 +12,10 @@ Features:
 - completely customizable.
 
 Screenshots:
+
 ![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Main page")
-![Catalog page](/images/catalog.png "Catalog page")
-![Item page](/images/item.jpg "Item page")
+![Catalog page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Catalog page")
+![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item.jpg "Item page")
 
 Installation:
 Place files to folder catalog/view/theme/tecart
