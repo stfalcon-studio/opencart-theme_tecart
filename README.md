@@ -12,7 +12,7 @@ Features:
 - completely customizable.
 
 Screenshots:
-![Main page](stfalcon-studio/opencart-theme_tecart/blob/master/images/main.png "Main page")
+![Main page](/master/images/main.png "Main page")
 ![Catalog page](/images/catalog.png "Catalog page")
 ![Item page](/images/item.jpg "Item page")
 
