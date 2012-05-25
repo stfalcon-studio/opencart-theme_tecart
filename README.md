@@ -11,7 +11,10 @@ Features:
 - сompatible with all major browsers.
 - completely customizable.
 
-
+Screenshots:
+![Main page](/images/main.png "Main page")
+![Catalog page](/images/catalog.png "Catalog page")
+![Item page](/images/item.jpg "Item page")
 
 Installation:
 Place files to folder catalog/view/theme/tecart
