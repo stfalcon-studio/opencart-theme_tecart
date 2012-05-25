@@ -18,7 +18,7 @@ http://opencart-themes.dev.stfalcon.com/
 
 ##Screenshots:
 
-![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Main page")
+![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/main.png "Main page")
 ![Catalog page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Catalog page")
 ![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item.png "Item page")
 
