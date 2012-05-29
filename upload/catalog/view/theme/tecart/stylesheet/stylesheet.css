@@ -2400,7 +2400,7 @@ table.list .center {
 		.copyright{
 			
 			}
-			.copyright a{
+			.copyright a, #powered .copyright a:hover, #powered .copyright a:active{
 				text-decoration:none;
 				color:#fff;
 				}
