@@ -34,4 +34,4 @@ Additional configuration for pretty look - please read instruction.pdf
 <a href="http://stfalcon.com/">stfalcon.com studio</a>
 
 ##License: 
-CC-BY-NC-SA
+GNU GPL 3.0
