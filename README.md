@@ -1,8 +1,8 @@
-Tecart - theme for Opencart v1.5.2.1
+#Tecart - theme for Opencart v1.5.2.1
 
 Tecart is awesome OpenCart template. It's specially designed for electronics, computers, mobile stores. Intuitive navigation. Great colors combination of blue, green and gray. It's compatible with features of default template. All sub pages are carefully customized.
 
-Features:
+##Features:
 - big thumbnails.
 - awesome search field.
 - customized catalog in grid and list view.
@@ -11,20 +11,27 @@ Features:
 - compatible with all major browsers.
 - completely customizable.
 
-Screenshots:
 
-![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Main page")
+##Demo:
+
+http://opencart-themes.dev.stfalcon.com/
+
+##Screenshots:
+
+![Main page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/main.png "Main page")
 ![Catalog page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/catalog.png "Catalog page")
-![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item. "Item page")
+![Item page](https://github.com/stfalcon-studio/opencart-theme_tecart/raw/master/images/item.png "Item page")
 
-Installation:
-Place files to folder catalog/view/theme/tecart
+##Installation:
+
+Place files from upload folder to your site opencart directory.
 
 Additional configuration for pretty look - please read instruction.pdf
 
 
-Author: 
-stfalcon.com studio
+##Author: 
 
-License: 
-GNU GPL 3.0
+<a href="http://stfalcon.com/">stfalcon.com studio</a>
+
+##License: 
+CC-BY-NC-SA
