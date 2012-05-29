@@ -14,7 +14,7 @@ Tecart is awesome OpenCart template. It's specially designed for electronics, co
 
 ##Demo:
 
-http://opencart-themes.dev.stfalcon.com/
+http://tecart.dev.stfalcon.com/
 
 ##Screenshots:
 

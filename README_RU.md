@@ -1,20 +1,19 @@
 #Tecart - тема для Opencart v1.5.2.1
-
-Tecart is awesome OpenCart template. It's specially designed for electronics, computers, mobile stores. Intuitive navigation. Great colors combination of blue, green and gray. It's compatible with features of default template. All sub pages are carefully customized.
+Tecart — потрясающая тема оформления для движка OpenCart. Она отлично подходит для магазинов электроники, компьютерной техники, мобильной техники. Интуитивная навигация. Отличное сочетание голубого, зеленого и серого цветов. В теме поддерживаются все стандартные функции движка. Все страницы темы тщательно проработаны.
 
 ##Особенности:
-- big thumbnails.
-- awesome search field.
-- customized catalog in grid and list view.
-- all blocks, cart and checkout progress pages, product catalog pages and customer pages are customized.
-- applicable for multi-languages.
-- compatible with all major browsers.
-- completely customizable.
+- Большие фото товаров.
+- Замечательное поле поиска.
+- Проработанный вид каталога сеткой и списком.
+- Проработаны все блоки, «корзина» и «оформление заказа», страницы каталога и страницы покупателя.
+- Поддерживается многоязычная версия.
+- Совместима со всеми популярными браузерами.
+- Возможна настройка «под себя».
 
 
 ##Демо:
 
-http://opencart-themes.dev.stfalcon.com/
+http://tecart.dev.stfalcon.com/
 
 ##Скриншоты:
 
