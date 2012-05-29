@@ -13,7 +13,7 @@ Tecart — потрясающая тема оформления для движ�
 
 ##Демо:
 
-http://opencart-themes.dev.stfalcon.com/
+http://tecart.dev.stfalcon.com/
 
 ##Скриншоты:
 
