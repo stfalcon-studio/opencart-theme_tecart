@@ -77,7 +77,7 @@ function display(view) {
 	if (view == 'list') {
 		$('.product-grid').attr('class', 'product-list');
 		
-		$('.product-list > div').each(function(index, element) {
+		/*$('.product-list > div').each(function(index, element) {
 			html  = '<div class="right">';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
@@ -111,9 +111,9 @@ function display(view) {
 
 						
 			$(element).html(html);
-		});		
+		});*/	
 		
-		$('.display').html('<b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
+		$('.display').html('<b><?php echo $text_display; ?></b> <span class="show-list"><?php echo $text_list; ?></span> <a class="show-grid" onclick="display(\'grid\');"><?php echo $text_grid; ?></a>');
 		
 		$.cookie('display', 'list'); 
 	} else {
@@ -150,7 +150,7 @@ function display(view) {
 			$(element).html(html);
 		});	
 					
-		$('.display').html('<b><?php echo $text_display; ?></b> <a onclick="display(\'list\');"><?php echo $text_list; ?></a> <b>/</b> <?php echo $text_grid; ?>');
+		$('.display').html('<b><?php echo $text_display; ?></b> <a class="show-list" onclick="display(\'list\');"><?php echo $text_list; ?></a> <span class="show-grid"><?php echo $text_grid; ?></span>');
 		
 		$.cookie('display', 'grid');
 	}
