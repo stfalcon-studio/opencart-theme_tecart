@@ -1802,7 +1802,7 @@ table.list .center {
 }
 .compare-info tr td:last-child {
 	color: #3e4348;
-	text-align: right;
+	text-align: center;
 	border-right: none;
 }
 .compare-info tr:last-child td {
@@ -1815,7 +1815,7 @@ table.list .center {
 	text-align: center;
 	vertical-align: top;
 	border-right: 1px solid #E1E6EB;
-	border-bottom: 1px solid #E1E6EB;
+	border-top: 1px solid #E1E6EB;
 }
 .compare-info .name a {
 	font-weight: bold;
