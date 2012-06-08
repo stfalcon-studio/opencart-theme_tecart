@@ -1285,7 +1285,7 @@ table.list .center {
 /* category */
 .category-info {
 	overflow: auto;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-top: 10px;
 }
 .category-info p{
@@ -1305,7 +1305,12 @@ table.list .center {
 .category-list ul {
 	float: left;
 	width: 18%;
+	margin: -3px 0 10px 0;
+	padding: 0 30px 0 0;
+	list-style: none;
+	white-space: nowrap;
 }
+
 .category-list .div a {
 	text-decoration: underline;
 	font-weight: bold;
