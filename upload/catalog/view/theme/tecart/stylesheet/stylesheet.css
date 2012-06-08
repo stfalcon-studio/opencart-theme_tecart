@@ -2177,6 +2177,10 @@ table.list .center {
 	color: #F00;
 	font-weight: bold;
 }
+
+.cart-module > div {
+	display: none;
+}
 .cart-module .cart-heading {
 	border: 1px solid #DBDEE1;
 	padding: 8px 8px 8px 22px;
