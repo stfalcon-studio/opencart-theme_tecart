@@ -113,7 +113,7 @@ ul{
 	position:relative;
 }
 #column-left {
-	float: right;
+	float: left;
 	width: 210px;
 }
 #column-right {
@@ -127,7 +127,7 @@ ul{
 	
 }
 #column-left + #column-right + #content, #column-left + #content {
-	margin-right: 240px;
+	margin-left: 240px;
 }
 #column-right + #content {
 	margin-right: 240px;
@@ -1047,17 +1047,21 @@ table.list .center {
 	}
 /* box products */
 .box-product {
-	width: 970px;
+/*	width: 970px;*/
 	overflow: auto;
 }
 .box-product > div {
 	width: 220px;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 17px;
+	margin-left: 16px;
 	margin-bottom: 20px;	
 	text-align:center;
 	position:relative;
+}
+
+.box-product > div:first-child{
+	margin-left:0px;
 }
 .box-product > div:hover .cart .button{
 	display:inline-block;
