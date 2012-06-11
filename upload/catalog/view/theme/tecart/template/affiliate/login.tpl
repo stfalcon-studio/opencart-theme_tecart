@@ -25,11 +25,11 @@
         <div class="content">
           <p><?php echo $text_i_am_returning_affiliate; ?></p>
           <b><?php echo $entry_email; ?></b><br />
-          <input type="text" name="email" value="" />
+          <input type="text" name="email" value="<?php echo $email; ?>" />
           <br />
           <br />
           <b><?php echo $entry_password; ?></b><br />
-          <input type="password" name="password" value="" />
+          <input type="password" name="password" value="<?php echo $password; ?>" />
           <br />
           <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
           <br />
