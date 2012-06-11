@@ -96,6 +96,7 @@
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
+	margin-top: 8px;
 }
 .slideshow a {
 	border: 0;

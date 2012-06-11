@@ -1089,6 +1089,13 @@ table.list .center {
 	text-transform:uppercase;
 	background:none;
 }
+#column-left .box-product .cart, #column-right .box-product .cart{
+	display:none !important;
+}
+
+.column-right .box-product .image img {
+	border: none;
+}
 .box-product .cart{
 	position:absolute;
 	bottom:75px;
