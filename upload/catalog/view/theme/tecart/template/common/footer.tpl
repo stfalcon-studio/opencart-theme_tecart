@@ -8,6 +8,7 @@
 </div>
 <div class="footer-wrap">
 <div id="footer">
+  <?php if ($informations) { ?>
   <div class="column">
     <h3><?php echo $text_information; ?></h3>
     <ul>
@@ -16,6 +17,7 @@
       <?php } ?>
     </ul>
   </div>
+  <?php } ?>
   <div class="column">
     <h3><?php echo $text_service; ?></h3>
     <ul>
@@ -44,19 +46,19 @@
   </div>
 </div>
 
-<!-- 
+<!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
 //-->
 <div class="powered-wrap">
-	
+
 	<div id="powered">
 		<div class="user-copyright"><?php echo $powered; ?></div>
 		<span class="copyright"> Theme designed by <a href="http://www.stfalcon.com"><span class="icon"></span>stfalcon.com</a></span>
 	</div>
 </div>
 </div>
-<!-- 
+<!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
 //-->

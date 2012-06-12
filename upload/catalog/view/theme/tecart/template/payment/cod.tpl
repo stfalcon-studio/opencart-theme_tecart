@@ -6,7 +6,7 @@
 <script type="text/javascript"><!--
 $('#button-confirm').bind('click', function() {
 	$.ajax({ 
-		type: 'GET',
+		type: 'get',
 		url: 'index.php?route=payment/cod/confirm',
 		success: function() {
 			location = '<?php echo $continue; ?>';

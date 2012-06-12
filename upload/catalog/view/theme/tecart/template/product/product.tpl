@@ -163,7 +163,7 @@
           <span class="required">*</span>
           <?php } ?>
           <b><?php echo $option['name']; ?>:</b><br />
-          <a id="button-option-<?php echo $option['product_option_id']; ?>" class="button"><?php echo $button_upload; ?></a>
+          <input type="button" value="<?php echo $button_upload; ?>" id="button-option-<?php echo $option['product_option_id']; ?>" class="button">
           <input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]" value="" />
         </div>
         <br />
@@ -205,10 +205,11 @@
         <div><?php echo $text_qty; ?>
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-          &nbsp;<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+          &nbsp;
+          <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
           </div>
         <!--<div><span>&nbsp;&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;&nbsp;</span></div>-->
-        
+
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
         <?php } ?>
@@ -218,8 +219,8 @@
         <div><img src="catalog/view/theme/tecart/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
         <div class="share"><!-- AddThis Button BEGIN -->
           <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
-          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
-          <!-- AddThis Button END --> 
+          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script>
+          <!-- AddThis Button END -->
 		  <div class="wish-links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a>
           <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></div>
         </div>
@@ -268,7 +269,7 @@
       <div>
         <input type="text" name="name" value="" placeholder="<?php echo $entry_name; ?>"/>
       </div>
-      
+
       <div>
         <textarea name="text" cols="40" rows="3" placeholder="<?php echo $entry_review; ?>"></textarea>
         <!-- <span class="txt-message"><?php echo $text_note; ?></span> -->
@@ -283,13 +284,13 @@
         <input type="radio" name="rating" value="5" />
         <b><?php echo $entry_good; ?></b>
       </div>
-      
+
       <div>
         <?php echo $entry_captcha; ?><br />
         <img src="index.php?route=product/product/captcha" alt="" id="captcha" /><br />
         <input type="text" name="captcha" value="" />
       </div>
-      
+
       <div class="buttons">
         <a id="button-review" class="button"><?php echo $button_continue; ?></a>
       </div>
@@ -324,8 +325,12 @@
   <?php } ?>
   <?php if ($tags) { ?>
   <div class="tags"><b><?php echo $text_tags; ?></b>
-    <?php foreach ($tags as $tag) { ?>
-    <a href="<?php echo $tag['href']; ?>"><?php echo $tag['tag']; ?></a>,
+    <?php for ($i = 0; $i < count($tags); $i++) { ?>
+    <?php if ($i < (count($tags) - 1)) { ?>
+    <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
+    <?php } else { ?>
+    <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>
+    <?php } ?>
     <?php } ?>
   </div>
   <?php } ?>
@@ -335,7 +340,7 @@ $('.colorbox').colorbox({
 	overlayClose: true,
 	opacity: 0.5
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#button-cart').bind('click', function() {
 	$.ajax({
@@ -345,24 +350,24 @@ $('#button-cart').bind('click', function() {
 		dataType: 'json',
 		success: function(json) {
 			$('.success, .warning, .attention, information, .error').remove();
-			
+
 			if (json['error']) {
 				if (json['error']['option']) {
 					for (i in json['error']['option']) {
 						$('#option-' + i).after('<span class="error">' + json['error']['option'][i] + '</span>');
 					}
 				}
-			} 
-			
+			}
+
 			if (json['success']) {
 				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/tecart/image/close.png" alt="" class="close" /></div>');
-					
+
 				$('.success').fadeIn('slow');
-					
+
 				$('#cart-total').html(json['total']);
-				
-				$('html, body').animate({ scrollTop: 0 }, 'slow'); 
-			}	
+
+				$('html, body').animate({ scrollTop: 0 }, 'slow');
+			}
 		}
 	});
 });
@@ -379,21 +384,24 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 	responseType: 'json',
 	onSubmit: function(file, extension) {
 		$('#button-option-<?php echo $option['product_option_id']; ?>').after('<img src="catalog/view/theme/default/image/loading.gif" class="loading" style="padding-left: 5px;" />');
+        $('#button-option-<?php echo $option['product_option_id']; ?>').attr('disabled', true);
 	},
 	onComplete: function(file, json) {
+        $('#button-option-<?php echo $option['product_option_id']; ?>').attr('disabled', false);
+
 		$('.error').remove();
-		
-		if (json.success) {
-			alert(json.success);
-			
-			$('input[name=\'option[<?php echo $option['product_option_id']; ?>]\']').attr('value', json.file);
+
+		if (json['success']) {
+			alert(json['success']);
+
+			$('input[name=\'option[<?php echo $option['product_option_id']; ?>]\']').attr('value', json['file']);
 		}
-		
-		if (json.error) {
-			$('#option-<?php echo $option['product_option_id']; ?>').after('<span class="error">' + json.error + '</span>');
+
+		if (json['error']) {
+			$('#option-<?php echo $option['product_option_id']; ?>').after('<span class="error">' + json['error'] + '</span>');
 		}
-		
-		$('.loading').remove();	
+
+		$('.loading').remove();
 	}
 });
 //--></script>
@@ -402,14 +410,14 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <?php } ?>
 <script type="text/javascript"><!--
 $('#review .pagination a').live('click', function() {
-	$('#review').slideUp('slow');
-		
+	$('#review').fadeOut('slow');
+
 	$('#review').load(this.href);
-	
-	$('#review').slideDown('slow');
-	
+
+	$('#review').fadeIn('slow');
+
 	return false;
-});			
+});
 
 $('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
 
@@ -429,13 +437,13 @@ $('#button-review').bind('click', function() {
 			$('.attention').remove();
 		},
 		success: function(data) {
-			if (data.error) {
-				$('#review-title').after('<div class="warning">' + data.error + '</div>');
+			if (data['error']) {
+				$('#review-title').after('<div class="warning">' + data['error'] + '</div>');
 			}
-			
-			if (data.success) {
-				$('#review-title').after('<div class="success">' + data.success + '</div>');
-								
+
+			if (data['success']) {
+				$('#review-title').after('<div class="success">' + data['success'] + '</div>');
+
 				$('input[name=\'name\']').val('');
 				$('textarea[name=\'text\']').val('');
 				$('input[name=\'rating\']:checked').attr('checked', '');
@@ -444,11 +452,11 @@ $('#button-review').bind('click', function() {
 		}
 	});
 });
-//--></script> 
+//--></script>
 <script type="text/javascript"><!--
 $('#tabs a').tabs();
-//--></script> 
-<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script> 
+//--></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-timepicker-addon.js"></script>
 <script type="text/javascript"><!--
 if ($.browser.msie && $.browser.version == 6) {
 	$('.date, .datetime, .time').bgIframe();
@@ -460,5 +468,5 @@ $('.datetime').datetimepicker({
 	timeFormat: 'h:m'
 });
 $('.time').timepicker({timeFormat: 'h:m'});
-//--></script> 
+//--></script>
 <?php echo $footer; ?>
