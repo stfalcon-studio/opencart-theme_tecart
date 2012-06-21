@@ -1046,26 +1046,22 @@ table.list .center {
 	padding: 0px;
 	}
 /* box products */
+/*
 .box-product {
-/*	width: 970px;*/
+	width: 970px;
 	overflow: auto;
 }
+*/
 .box-product > div {
 	width: 220px;
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 16px;
+	margin-right: 10px;
 	margin-bottom: 20px;	
 	text-align:center;
 	position:relative;
 }
-
-.box-product > div:first-child{
-	margin-left:0px;
-}
-.box-product > div:hover .cart .button{
-	display:inline-block;
-	}
+#column-left .box-product, #column-right .box-product{padding:10px 0; text-align:center;}
 #column-left + #column-right + #content .box-product > div {
 	width: 119px;
 }
@@ -1079,6 +1075,9 @@ table.list .center {
 .box-product .image img {
 	border-top: 1px solid #B4C0CD;
 	border-bottom: 1px solid #B4C0CD;
+}
+.column-right .box-product .image img {
+	border: none;
 }
 .box-product .name a, .box-product .name a:active {
 	color: #38B0E3;
@@ -1098,7 +1097,7 @@ table.list .center {
 }
 .box-product .cart{
 	position:absolute;
-	bottom:75px;
+	bottom:34%;
 	width:100%;
 	left:0px;
 	}
@@ -1315,7 +1314,6 @@ table.list .center {
 	margin: -3px 0 10px 0;
 	padding: 0 30px 0 0;
 	list-style: none;
-	white-space: nowrap;
 }
 
 .category-list .div a {
@@ -1593,7 +1591,7 @@ table.list .center {
 .product-grid .cart {
 	margin-bottom: 3px;
 	position:absolute;
-	top:50%;
+	top:160px;
 	left:0px;
 	width:100%;
 	display:none;
@@ -1819,7 +1817,7 @@ table.list .center {
 }
 .compare-info tr td:last-child {
 	color: #3e4348;
-	text-align: center;
+	text-align: right;
 	border-right: none;
 }
 .compare-info tr:last-child td {
@@ -1832,7 +1830,7 @@ table.list .center {
 	text-align: center;
 	vertical-align: top;
 	border-right: 1px solid #E1E6EB;
-	border-top: 1px solid #E1E6EB;
+	border-bottom: 1px solid #E1E6EB;
 }
 .compare-info .name a {
 	font-weight: bold;
@@ -2439,6 +2437,10 @@ table.list .center {
 		padding:50px 0 15px;
 		overflow:hidden;
 		}
+        .footer-wrap #footer:before, .footer-wrap #footer:after { content: ""; display: table; }
+	.footer-wrap #footer:after { clear: both; }
+	.footer-wrap #footer { *zoom: 1; }
+
 .mini-cart-info table{	
 	border-collapse:collapse;
 	width:100%;
