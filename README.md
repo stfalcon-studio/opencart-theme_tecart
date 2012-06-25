@@ -1,7 +1,5 @@
 #Tecart - theme for Opencart v1.5.3.1
 
-Warning, unfinished
-
 Tecart is awesome OpenCart template. It's specially designed for electronics, computers, mobile stores. Intuitive navigation. Great colors combination of blue, green and gray. It's compatible with features of default template. All sub pages are carefully customized.
 
 ##Features:
