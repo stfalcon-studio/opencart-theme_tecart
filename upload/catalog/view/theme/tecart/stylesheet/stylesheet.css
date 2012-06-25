@@ -2033,8 +2033,9 @@ table.list .center {
 	width: 33.3%;
 }
 .return-opened textarea {
-	width: 98%;
+        width: 85%;
 	vertical-align: top;
+        resize: vertical;
 }
 .return-remove {
 	float: left;
@@ -2052,8 +2053,8 @@ table.list .center {
 	width: 49%;
 }
 .return-captcha {
-	float: right;
-	width: 49%;
+	float: left;
+	width: 33.3%;
 }
 .download-list {
 	margin-bottom: 10px;
