@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header;?>
 <div class="breadcrumb">
   <?php foreach ($breadcrumbs as $breadcrumb) { ?>
   <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -18,7 +18,7 @@
   </div>
   <?php } ?>
   <?php if ($categories) { ?>
-  <!--<h2><?php echo $text_refine; ?></h2>
+  <!-- --><h2><?php echo $text_refine; ?></h2>
   <div class="category-list">
     <?php if (count($categories) <= 5) { ?>
     <ul>
@@ -38,7 +38,7 @@
     </ul>
     <?php } ?>
     <?php } ?>
-  </div>-->
+  </div><!-- -->
   <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter">
