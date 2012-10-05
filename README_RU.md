@@ -18,7 +18,7 @@ http://tecart.dev.stfalcon.com/
 
 ##Ссилки для скачивания:
 
-<a href="https://github.com/stfalcon-studio/opencart-theme_tecart/zipball/master">Для версии Opencart 1.5.4.x</a>
+<a href="https://github.com/stfalcon-studio/opencart-theme_tecart/zipball/master">Для версии Opencart 1.5.4.x</a><br>
 <a href="https://github.com/stfalcon-studio/opencart-theme_tecart/zipball/opencart_1.5.3.1">Для версии Opencart 1.5.3.1</a>
 
 ##Скриншоты:
