@@ -58,7 +58,7 @@
           <td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
         </tr>
         <tr style="display: <?php echo (count($customer_groups) > 1 ? 'table-row' : 'none'); ?>;">
-          <td><?php echo $entry_account; ?></td>
+          <td><?php echo $entry_customer_group; ?></td>
           <td><select name="customer_group_id">
               <?php foreach ($customer_groups as $customer_group) { ?>
               <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
