@@ -38,7 +38,7 @@
     </ul>
     <?php } ?>
     <?php } ?>
-  </div><!-- -->
+  </div>
   <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter">
