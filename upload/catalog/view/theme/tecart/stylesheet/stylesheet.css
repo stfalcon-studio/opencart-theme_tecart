@@ -2392,7 +2392,7 @@ table.list .center {
 .footer-wrap{
 	background:#30363b url(../image/footer-bg.png) 0 0 repeat-x;
 	font-size:13px;
-	margin-top:-5px;
+	/*margin-top:-5px;*/
 	}
 	.footer-wrap a{
 		text-decoration: none;
