@@ -65,7 +65,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
   <div id="search">
     <div class="button-search"></div>
     <?php if ($search) { ?>
-    <input type="text" name="filter_name" value="<?php echo $search; ?>" />
+    <input type="text" name="search" value="<?php echo $search; ?>" />
     <?php } else { ?>
     <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
     <?php } ?>
