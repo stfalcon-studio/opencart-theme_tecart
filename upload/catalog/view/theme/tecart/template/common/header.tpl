@@ -42,6 +42,15 @@
 DD_belatedPNG.fix('#logo img');
 </script>
 <![endif]-->
+<?php if ($stores) { ?>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+<?php foreach ($stores as $store) { ?>
+$('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></iframe>');
+<?php } ?>
+});
+//--></script>
+<?php } ?>
 <?php echo $google_analytics; ?>
 </head>
 <body>
@@ -55,10 +64,10 @@ DD_belatedPNG.fix('#logo img');
   <?php echo $cart; ?>
   <div id="search">
     <div class="button-search"></div>
-    <?php if ($filter_name) { ?>
-    <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
+    <?php if ($search) { ?>
+    <input type="text" name="filter_name" value="<?php echo $search; ?>" />
     <?php } else { ?>
-    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+    <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
     <?php } ?>
   </div>
   <div id="welcome">
