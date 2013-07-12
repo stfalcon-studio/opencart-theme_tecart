@@ -27,7 +27,7 @@
   <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" />
   <br />
   <br />
-  <div style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;"><?php echo $entry_account; ?><br />
+  <div style="display: <?php echo (count($customer_groups) > 1 ? 'block' : 'none'); ?>;"><?php echo $entry_customer_group; ?><br />
     <select name="customer_group_id" class="large-field">
       <?php foreach ($customer_groups as $customer_group) { ?>
       <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
