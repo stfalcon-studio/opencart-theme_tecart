@@ -2415,7 +2415,8 @@ ul.box-filter li{
 	background:#30363b url(../image/footer-bg.png) 0 0 repeat-x;
 	font-size:13px;
 	/*margin-top:-5px;*/
-	}
+    min-width: 940px;
+}
 	.footer-wrap a{
 		text-decoration: none;
 		font-size: 13px;
