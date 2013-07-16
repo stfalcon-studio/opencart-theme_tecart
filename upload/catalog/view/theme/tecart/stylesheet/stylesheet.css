@@ -1250,6 +1250,28 @@ table.list .center {
 	font-weight: bold;
 }
 
+/* box filter */
+ul.box-filter, ul.box-filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.box-filter{
+    padding: 10px;
+}
+ul.box-filter span {
+    font-weight: bold;
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+ul.box-filter > li ul {
+    padding: 0 0 10px !important;
+}
+ul.box-filter li{
+    border-top: none !important;
+}
 /**/
 /* content */
 #content .content#shipping{
@@ -2393,7 +2415,8 @@ table.list .center {
 	background:#30363b url(../image/footer-bg.png) 0 0 repeat-x;
 	font-size:13px;
 	/*margin-top:-5px;*/
-	}
+    min-width: 940px;
+}
 	.footer-wrap a{
 		text-decoration: none;
 		font-size: 13px;
