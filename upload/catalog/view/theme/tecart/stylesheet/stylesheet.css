@@ -1257,7 +1257,7 @@ ul.box-filter, ul.box-filter ul {
     padding: 0;
 }
 ul.box-filter{
-    padding: 10px;
+    padding: 10px 10px 0px;
 }
 ul.box-filter span {
     font-weight: bold;
@@ -1271,6 +1271,15 @@ ul.box-filter > li ul {
 }
 ul.box-filter li{
     border-top: none !important;
+}
+.box-content .box-filter ul{
+    display: block;
+}
+.box-content .box-filter ul li{
+    padding: 0px 5px 5px 0px;
+}
+#button-filter {
+    margin: 0 0 10px 10px;
 }
 /**/
 /* content */
